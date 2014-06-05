@@ -1,0 +1,9 @@
+table.gallery{
+  width : 750px ;
+  margin : auto ;
+}
+td.gallery_before, td.gallery_after{
+  width : 375px ;
+  text-align : center ;
+  vertical-align : middle ;
+}

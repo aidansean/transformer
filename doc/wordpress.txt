@@ -1,0 +1,22 @@
+[mathjax]
+
+When I discovered I could manipulate images with PHP one of the first things I wanted to do was perform coordinate transformations.  They have fascinated me since I first came across them and so I developed this project to satifsy my curiosity about what a skyline might look like when transformed into polar coordinates.
+
+<h3>Links</h3>
+
+<a href="http://www.aidansean.com/transformer">Live page</a>
+<a href="https://github.com/aidansean/transformer">GitHub repository</a>
+
+<h3>Overview</h3>
+
+This project takes an image and uses PHP to manipulate it pixel by pixel so that the \((x,y)\) coordinates get translated into \((r,\theta\) coordinates.
+
+<h3>Challenges</h3>
+<dl>
+<dt><em>Challenge</em>: The transformation itself isn't trivial.</dt>
+
+<dd><em>Solution</em>: The first difficulty to overcome is the transformation itself.  The details are given on the page, so I won't reproduce them here. (Resolved)</dd>
+<dt><em>Challenge</em>: The transformation has to be performed "backwards".</dt>
+
+<dd><em>Solution</em>: It took me a while to realise that the transformation has to be performed from target to source rather than the other way around.  Rather than taking a pixel from source to the target, the pixel must be taken from the target to the source, because otherwise the target image will have "gaps" in it. (Resolved)</dd>
+</dl>
