@@ -1,9 +1,17 @@
 table.gallery{
   width : 750px ;
   margin : auto ;
+  border-collapse : collapse
 }
 td.gallery_before, td.gallery_after{
   width : 375px ;
+}
+td.gallery_title{
+  color : white ;
+  background : black ;
+}
+td.gallery_text{
   text-align : center ;
   vertical-align : middle ;
+  font : 16pt arial ;
 }
